@@ -1,0 +1,21 @@
+# Build output
+*.exe
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# IDE
+.vs/
+.vscode/
+*.suo
+*.user
+*.sln
+*.vcxproj*
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

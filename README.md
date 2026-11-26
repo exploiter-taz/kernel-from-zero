@@ -18,6 +18,7 @@ That pattern (build it, then find it in the kernel) runs through the entire repo
 |------|---------------|------|
 | [01](01-intrusive-list/) | `LIST_ENTRY`, `CONTAINING_RECORD`, intrusive linked lists. The data structure behind every kernel chain | `list.c` |
 | [02](02-talking-to-drivers/) | Device handles, `DeviceIoControl`, `CTL_CODE` layout, BYOVD driver scanning. The bridge between user mode and kernel mode | `talk.c` |
+| [03](03-MSRs/) | Model-Specific Registers: `IA32_LSTAR`, `IA32_EFER`, `swapgs`, SMEP/SMAP. How the CPU controls the syscall boundary and what breaks when you can wrmsr | WinDbg only |
 | [04](04-threads-and-irql/) | Threads, the TEB, scheduling, IRQL levels, DPCs, APC injection. What the CPU actually runs and why touching paged memory in a DPC blue-screens | `thread-irql-inspector.c` |
 | [05](05-virtual-memory/) | Virtual address spaces, 4-level page tables, VADs, kernel pool, the allocation lifecycle, `NtAllocateVirtualMemory` | `memory-inspector.c` |
 | [06](06-objects-and-handles/) | The object model, handle tables, dual refcounting, `_EX_FAST_REF`, the Object Manager namespace, system-wide handle enumeration | `handle-inspector.c` |
